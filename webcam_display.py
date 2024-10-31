@@ -1,6 +1,5 @@
 import cv2
 from PIL import Image
-import numpy as np
 import subprocess
 import os
 
@@ -45,8 +44,6 @@ def display_ascii_art(ascii_img):
 
 # 捕获实时视频流
 cap = cv2.VideoCapture(0)  # 0 表示默认摄像头
-
-# subprocess.Popen(["vlc", "v4l2:///dev/video0"])  # 对于 Linux 系统
 
 while True:
     ret, frame = cap.read()

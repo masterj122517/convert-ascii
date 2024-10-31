@@ -69,5 +69,6 @@ for y in range(height):
         )
 
 # 保存为图像文件
-ascii_img.save(imgName)
+save_path = os.path.join("./converted_img", imgName)
+ascii_img.save(save_path)
 print("ASCII图像已保存为 " + imgName)
